@@ -9,7 +9,7 @@ Feature: Get the weather details depending on the query parameter
      | latitude   | longitude  | stateCode |
      | 40.730610  | -73.935242 | NY        |
 
-
+@test
   Scenario Outline: Get the time stamp and weather details for given postal code
     Given I have the api key
     And I have the post code <postCode> to check three hourly weather report
