@@ -19,7 +19,9 @@ Clone the project on to the local machine
 
   mvn clean install
 
-- Execute(Run) Runner.java  (src/test/java)
+- Execute(Run) Runner.java  (src/test/java) to run as JUnit tests
+Execute "mvn test" to run all the scenarios as maven tests
+         "test -DTags=@test" to run tests having specific tags such as @test
 - The 2 scenarios in the Weather.feature will execute by taking the test data from the TestData.properties
 - utilityClasses/CallApiUtil.java contains the rest assured implementation of calling the API
 - WeatherApi.java contains the step definition implementation for the feature file.
